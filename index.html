@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>West Central College of Arts and Science</title>
+    
+    <!-- External Libraries -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="nav-container">
+            <div class="logo">
+                <img src=images/Logo.png alt="WCCAS Logo">
+                <span class="logo-text">WCCAS</span>
+            </div>
+            
+            <nav>
+                <ul>
+                    <li><a href="#home">Home</a></li>
+                    <li class="dropdown">
+                        <a href="#admission">Admission <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="openModal('scholarshipModal')">Scholarship</a>
+                            <a href="#" onclick="openModal('requirementsModal')">Requirements</a>
+                            <a href="#programs">Programs</a>
+                        </div>
+                    </li>
+                    <li class="dropdown">
+                        <a href="#academics">Academics <i class="fas fa-chevron-down"></i></a>
+                        <div class="dropdown-content">
+                            <a href="#" onclick="openModal('gradingModal')">Grading System</a>
+                            <a href="#" onclick="openModal('policiesModal')">Academic Policies</a>
+                            <a href="#" onclick="openModal('handbookModal')">Student Handbook</a>
+                        </div>
+                    </li>
+                    <li><a href="#services">Student Services</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+
+            <div class="search-box">
+                <input type="text" placeholder="Search...">
+                <i class="fas fa-search"></i>
+            </div>
+
+            <button class="mobile-menu">
+                <i class="fas fa-bars"></i>
+            </button>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <video class="hero-video" autoplay muted loop>
+            <source src="https://sample-videos.com/zip/10/mp4/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
+        </video>
+        <div class="hero-overlay"></div>
+        <div class="hero-content">
+            <h1>West Central College of Arts and Science</h1>
+            <p>To develop competitive students by providing them with high-quality, career-oriented programs which allows students to achieve academic excellence and success in local, national, and global communities.</p>
+            <div class="cta-buttons">
+                <a href="#" class="btn btn-primary" onclick="openModal('enrollModal')">
+                    <i class="fas fa-graduation-cap"></i>
+                    Enroll Now
+                </a>
+                <a href="#about" class="btn btn-secondary">
+                    <i class="fas fa-info-circle"></i>
+                    Learn More
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="section">
+        <div class="section-header">
+            <h2 class="section-title">About WCCAS</h2>
+            <p class="section-subtitle">Established in 2013, WCCAS aims to produce globally competitive students prepared to meet the demands of today's workforce.</p>
+        </div>
+        
+        <div class="about-content">
+            <div>
+                <p class="about-text">
+                    West Central College of Arts and Science is an educational institution founded by Mrs. Amorwena C. Langit and Alfred Langit with the belief that education has a remarkable effect on one's personality, transforming a person to live a better life.
+                </p>
+                <p class="about-text">
+                    We are fully accredited and recognized by the Commission on Higher Education (CHED), Technical Education and Skills Development Authority (TESDA), and Department of Education (DepEd) in the Philippines.
+                </p>
+                
+                <div class="stats-grid">
+                    <div class="stat-card">
+                        <div class="stat-number">2013</div>
+                        <div class="stat-label">Established</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">1000+</div>
+                        <div class="stat-label">Students</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">50+</div>
+                        <div class="stat-label">Faculty</div>
+                    </div>
+                    <div class="stat-card">
+                        <div class="stat-number">95%</div>
+                        <div class="stat-label">Graduate Rate</div>
+                    </div>
+                </div>
+            </div>
+            
+            <div>
+                <h3>Our Core Values</h3>
+                <ul class="values-list">
+                    <li>
+                        <i class="fas fa-star"></i>
+                        <strong>Quality</strong> - Excellence in education and service
+                    </li>
+                    <li>
+                        <i class="fas fa-heart"></i>
+                        <strong>Service</strong> - Commitment to community development
+                    </li>
+                    <li>
+                        <i class="fas fa-users"></i>
+                        <strong>Teamwork</strong> - Collaborative learning environment
+                    </li>
+                    <li>
+                        <i class="fas fa-shield-alt"></i>
+                        <strong>Integrity</strong> - Honesty and ethical conduct
+                    </li>
+                    <li>
+                        <i class="fas fa-eye"></i>
+                        <strong>Transparency</strong> - Open and accountable practices
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Programs Section -->
+    <section id="programs" class="section programs-section">
+        <div class="section-header">
+            <h2 class="section-title">Academic Programs</h2>
+            <p class="section-subtitle">We offer comprehensive programs from Elementary to College level, designed to prepare students for success.</p>
+        </div>
+        
+        <div class="programs-grid">
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-child"></i>
+                </div>
+                <h3>Elementary Program</h3>
+                <p>Grade 1 to Grade 6 - Building strong foundations for lifelong learning with comprehensive K-12 curriculum.</p>
+                <a href="#" class="btn btn-primary" onclick="openModal('elementaryModal')">Learn More</a>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-user-graduate"></i>
+                </div>
+                <h3>Junior High School</h3>
+                <p>Grade 7 to Grade 10 - Developing critical thinking and preparing students for senior high school.</p>
+                <a href="#" class="btn btn-primary" onclick="openModal('jhsModal')">Learn More</a>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-graduation-cap"></i>
+                </div>
+                <h3>Senior High School</h3>
+                <p>Multiple strands including ABM, HUMSS, STEM, GAS, and TVL tracks for specialized learning.</p>
+                <a href="#" class="btn btn-primary" onclick="openModal('shsModal')">Learn More</a>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-university"></i>
+                </div>
+                <h3>College Programs</h3>
+                <p>Bachelor of Science in Entrepreneurship and Bachelor of Technical-Vocational Teacher Education.</p>
+                <a href="#" class="btn btn-primary" onclick="openModal('collegeModal')">Learn More</a>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-tools"></i>
+                </div>
+                <h3>TESDA Programs</h3>
+                <p>Technical and vocational courses including HRM, Culinary Arts, and various NCII certifications.</p>
+                <a href="#" class="btn btn-primary" onclick="openModal('tesdaModal')">Learn More</a>
+            </div>
+            
+            <div class="program-card">
+                <div class="program-icon">
+                    <i class="fas fa-certificate"></i>
+                </div>
+                <h3>Assessment Center</h3>
+                <p>Professional skills assessment and certification for various technical competencies.</p>
+                <a href="#" class="btn btn-primary">Learn More</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Student Handbook Section -->
+    <section id="handbook" class="section handbook-section">
+        <div class="section-header">
+            <h2 class="section-title">Student Handbook 2025</h2>
+            <p class="section-subtitle">Comprehensive guide to policies, procedures, and student life at WCCAS.</p>
+        </div>
+        
+        <div class="handbook-grid">
+            <div class="handbook-card" onclick="openModal('admissionPoliciesModal')">
+                <h4><i class="fas fa-user-plus"></i> Admission Policies</h4>
+                <p>Requirements, procedures, and guidelines for enrollment and admission to WCCAS programs.</p>
+            </div>
+            
+            <div class="handbook-card" onclick="openModal('academicPoliciesModal')">
+                <h4><i class="fas fa-book"></i> Academic Policies</h4>
+                <p>Grading system, attendance requirements, examination procedures, and academic standards.</p>
+            </div>
+            
+            <div class="handbook-card" onclick="openModal('conductCodeModal')">
+                <h4><i class="fas fa-gavel"></i> Code of Conduct</h4>
+                <p>Student discipline, prohibited acts, and behavioral expectations within the WCCAS community.</p>
+            </div>
+            
+            <div class="handbook-card" onclick="openModal('servicesModal')">
+                <h4><i class="fas fa-hands-helping"></i> Student Services</h4>
+                <p>Guidance counseling, health services, library access, and other support services available.</p>
+            </div>
+            
+            <div class="handbook-card" onclick="openModal('rightsModal')">
+                <h4><i class="fas fa-balance-scale"></i> Rights & Responsibilities</h4>
+                <p>Student rights, responsibilities, and the balance between freedom and accountability.</p>
+            </div>
+            
+            <div class="handbook-card" onclick="openModal('emergencyModal')">
+                <h4><i class="fas fa-exclamation-triangle"></i> Emergency Procedures</h4>
+                <p>Safety protocols, evacuation procedures, and emergency contact information.</p>
+            </div>
+            
+            <div class="handbook-card" onclick="openModal('organizationsModal')">
+                <h4><i class="fas fa-users"></i> Student Organizations</h4>
+                <p>Clubs, activities, leadership opportunities, and extracurricular involvement guidelines.</p>
+            </div>
+            
+            <div class="handbook-card" onclick="openModal('faqModal')">
+                <h4><i class="fas fa-question-circle"></i> FAQ</h4>
+                <p>Frequently asked questions about enrollment, academics, services, and campus life.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="section">
+        <div class="section-header">
+            <h2 class="section-title">Student Services</h2>
+            <p class="section-subtitle">Comprehensive support services to ensure student success and well-being.</p>
+        </div>
+        
+        <div class="services-grid">
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-user-md"></i>
+                </div>
+                <h3>Health Services</h3>
+                <p>School clinic with licensed nurse, first aid, health consultations, and medical emergency response.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-heart"></i>
+                </div>
+                <h3>Guidance & Counseling</h3>
+                <p>Individual and group counseling, career guidance, academic support, and personal development programs.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-book-open"></i>
+                </div>
+                <h3>Library & LRC</h3>
+                <p>Comprehensive learning resource center with books, digital resources, and research facilities.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-dollar-sign"></i>
+                </div>
+                <h3>Financial Assistance</h3>
+                <p>Scholarships, government subsidies, academic grants, and financial aid programs for deserving students.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-briefcase"></i>
+                </div>
+                <h3>Career Services</h3>
+                <p>Job placement assistance, career counseling, internship programs, and alumni network support.</p>
+            </div>
+            
+            <div class="service-card">
+                <div class="service-icon">
+                    <i class="fas fa-shield-alt"></i>
+                </div>
+                <h3>Campus Security</h3>
+                <p>24/7 security coverage, emergency response, and safety protocols to ensure a secure learning environment.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="section contact-section">
+        <div class="section-header">
+            <h2 class="section-title">Contact Us</h2>
+            <p class="section-subtitle">Get in touch with us for inquiries, admissions, or any assistance you need.</p>
+        </div>
+        
+        <div class="contact-content">
+            <div class="contact-info">
+                <h3>Get in Touch</h3>
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-map-marker-alt"></i>
+                    </div>
+                    <div>
+                        <h4>Address</h4>
+                        <p>Lourdes (Lauc Pao), Lubao, Pampanga, Philippines</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-phone"></i>
+                    </div>
+                    <div>
+                        <h4>Phone</h4>
+                        <p>(045) 307 4800</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-envelope"></i>
+                    </div>
+                    <div>
+                        <h4>Email</h4>
+                        <p>wccas2014@gmail.com</p>
+                    </div>
+                </div>
+                
+                <div class="contact-item">
+                    <div class="contact-icon">
+                        <i class="fas fa-clock"></i>
+                    </div>
+                    <div>
+                        <h4>Office Hours</h4>
+                        <p>Monday - Friday: 8:00 AM - 5:00 PM</p>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="contact-form">
+                <h3>Send a Message</h3>
+                <form>
+                    <div class="form-group">
+                        <label for="name">Full Name</label>
+                        <input type="text" id="name" name="name" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="email">Email Address</label>
+                        <input type="email" id="email" name="email" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="subject">Subject</label>
+                        <input type="text" id="subject" name="subject" required>
+                    </div>
+                    
+                    <div class="form-group">
+                        <label for="message">Message</label>
+                        <textarea id="message" name="message" rows="5" required></textarea>
+                    </div>
+                    
+                    <button type="submit" class="btn btn-primary">
+                        <i class="fas fa-paper-plane"></i>
+                        Send Message
+                    </button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>West Central College</h3>
+                <p>Developing competitive students through high-quality, career-oriented programs for academic excellence and global success.</p>
+                <div class="social-links">
+                    <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                </div>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Quick Links</h3>
+                <ul>
+                    <li><a href="#about">About WCCAS</a></li>
+                    <li><a href="#programs">Academic Programs</a></li>
+                    <li><a href="#services">Student Services</a></li>
+                    <li><a href="#" onclick="openModal('handbookModal')">Student Handbook</a></li>
+                    <li><a href="#contact">Contact Us</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Programs</h3>
+                <ul>
+                    <li><a href="#">Elementary</a></li>
+                    <li><a href="#">Junior High School</a></li>
+                    <li><a href="#">Senior High School</a></li>
+                    <li><a href="#">College Programs</a></li>
+                    <li><a href="#">TESDA Courses</a></li>
+                </ul>
+            </div>
+            
+            <div class="footer-section">
+                <h3>Contact Info</h3>
+                <ul class="contact-list">
+                    <li><i class="fas fa-map-marker-alt"></i> Sta. Cruz, Lubao, Pampanga</li>
+                    <li><i class="fas fa-phone"></i> (045) 307 4800</li>
+                    <li><i class="fas fa-envelope"></i> info@wccas.edu.ph</li>
+                    <li><i class="fas fa-globe"></i> www.wccas.edu.ph</li>
+                </ul>
+            </div>
+        </div>
+        
+        <div class="footer-bottom">
+            <p>&copy; 2025 West Central College of Arts and Science. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <!-- Modals -->
+    
+    <!-- Admission Requirements Modal -->
+    <div id="requirementsModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Admission Requirements</h2>
+            
+            <div class="modal-section">
+                <h3>Elementary Students</h3>
+                <ul>
+                    <li class="requirement-item">Kindergarten Certificate of Completion (if applicable)</li>
+                    <li class="requirement-item">PSA Birth Certificate</li>
+                    <li class="requirement-item">2 pcs 2x2 pictures</li>
+                    <li class="requirement-item">Long brown envelope</li>
+                    <li class="requirement-item">Accomplished Admission Form</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Junior High School</h3>
+                <ul>
+                    <li class="requirement-item">Accomplished Admission Form</li>
+                    <li class="requirement-item">Original Copy of Grade 6 Report Card (Form 138)</li>
+                    <li class="requirement-item">Certificate of Good Moral Character</li>
+                    <li class="requirement-item">PSA/NSO Birth Certificate (Original)</li>
+                    <li class="requirement-item">Recent 2x2 ID Pictures (2 copies)</li>
+                    <li class="requirement-item">Long brown envelope</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Senior High School</h3>
+                <ul>
+                    <li class="requirement-item">Accomplished Admission Form</li>
+                    <li class="requirement-item">Original Copy of Junior High School Report Card (Form 138)</li>
+                    <li class="requirement-item">Certificate of Good Moral Character</li>
+                    <li class="requirement-item">PSA/NSO Birth Certificate (Original)</li>
+                    <li class="requirement-item">Recent 2x2 ID Pictures (2 copies)</li>
+                    <li class="requirement-item">ESC Voucher Certificate (if applicable)</li>
+                    <li class="requirement-item">Long brown envelope</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>College Freshmen</h3>
+                <ul>
+                    <li class="requirement-item">Accomplished Admission Form</li>
+                    <li class="requirement-item">Original Senior High School Report Card (Form 138)</li>
+                    <li class="requirement-item">Certificate of Good Moral Character</li>
+                    <li class="requirement-item">PSA/NSO Birth Certificate (Original)</li>
+                    <li class="requirement-item">Recent 2x2 ID Pictures (2 copies)</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Grading System Modal -->
+    <div id="gradingModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Grading System</h2>
+            
+            <div class="modal-section">
+                <h3>Elementary to Senior High School</h3>
+                <div class="table-container">
+                    <table class="grading-table">
+                        <tr>
+                            <th>Numerical Grade</th>
+                            <th>Descriptive Equivalent</th>
+                            <th>Remarks</th>
+                        </tr>
+                        <tr>
+                            <td>90-100</td>
+                            <td>Outstanding</td>
+                            <td>Passed</td>
+                        </tr>
+                        <tr>
+                            <td>85-89</td>
+                            <td>Very Satisfactory</td>
+                            <td>Passed</td>
+                        </tr>
+                        <tr>
+                            <td>80-84</td>
+                            <td>Satisfactory</td>
+                            <td>Passed</td>
+                        </tr>
+                        <tr>
+                            <td>75-79</td>
+                            <td>Fairly Satisfactory</td>
+                            <td>Passed</td>
+                        </tr>
+                        <tr>
+                            <td>Below 75</td>
+                            <td>Did Not Meet Expectations</td>
+                            <td>Failed</td>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>College Grading Components</h3>
+                <ul>
+                    <li><strong>Written Work:</strong> 30%</li>
+                    <li><strong>Performance Task:</strong> 40%</li>
+                    <li><strong>Prelim Exam:</strong> 30%</li>
+                </ul>
+                
+                <h4>Final Grade Computation</h4>
+                <ul>
+                    <li><strong>Prelim:</strong> 20%</li>
+                    <li><strong>Midterm:</strong> 20%</li>
+                    <li><strong>Semi-Finals:</strong> 20%</li>
+                    <li><strong>Finals:</strong> 40%</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- FAQ Modal -->
+    <div id="faqModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Frequently Asked Questions</h2>
+            
+            <div class="modal-section">
+                <h3>Enrollment & Academic Records</h3>
+                <div class="faq-item">
+                    <strong>Q: What should I do if I miss the official enrollment period?</strong>
+                    <p>You must visit the Registrar's Office immediately. Late enrollment may be allowed only up to two (2) weeks after classes begin, subject to approval and payment of applicable penalty fees.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <strong>Q: How do I request academic documents?</strong>
+                    <p>Submit a request form at the Registrar's Office and pay the applicable processing fee at the Cashier. Processing time usually takes 3 to 5 working days.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <strong>Q: Can I change or drop a subject after enrollment?</strong>
+                    <p>Yes, you may file a Subject Drop Form within the first 6 weeks of the semester, with valid reasons and necessary approvals.</p>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Student Discipline & Conduct</h3>
+                <div class="faq-item">
+                    <strong>Q: What should I do if I witness or experience bullying?</strong>
+                    <p>Report immediately to the Office of Student Affairs or Guidance Office. Your report will be treated confidentially and investigated promptly.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <strong>Q: Can I get suspended for not wearing the proper uniform?</strong>
+                    <p>Not on first offense. However, repeated violations may lead to disciplinary action. Cross-dressing in uniform is allowed in accordance with our inclusion policy.</p>
+                </div>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Campus Life & Activities</h3>
+                <div class="faq-item">
+                    <strong>Q: How can I join a student organization?</strong>
+                    <p>Attend orientation activities and sign up during recruitment week. You can join more than one organization, provided you manage your time well.</p>
+                </div>
+                
+                <div class="faq-item">
+                    <strong>Q: Are students required to attend institutional events?</strong>
+                    <p>Yes, student participation in key institutional activities is mandatory unless excused for valid reasons. These events are part of holistic development.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Emergency Procedures Modal -->
+    <div id="emergencyModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Emergency Procedures</h2>
+            
+            <div class="modal-section">
+                <h3>Fire Emergency</h3>
+                <ul>
+                    <li>Alert others by shouting "Fire!" and activate the nearest fire alarm</li>
+                    <li>Evacuate immediately - do not retrieve personal belongings</li>
+                    <li>Use the nearest exit and proceed to the designated assembly area</li>
+                    <li>If smoke is present, stay low and cover your nose and mouth</li>
+                    <li>Report to your class adviser for attendance checking</li>
+                    <li>Do not re-enter the building unless cleared by authorities</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Earthquake Procedure</h3>
+                <ul>
+                    <li><strong>DROP</strong> to the ground</li>
+                    <li><strong>COVER</strong> under a sturdy desk or table</li>
+                    <li><strong>HOLD ON</strong> until the shaking stops</li>
+                    <li>Stay away from glass, windows, or objects that may fall</li>
+                    <li>If outdoors, move to an open area away from trees and power lines</li>
+                    <li>After shaking stops, evacuate calmly and proceed to evacuation area</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>Emergency Contacts</h3>
+                <ul>
+                    <li><strong>Security Office:</strong> 0927-386-4110</li>
+                    <li><strong>School Nurse:</strong> 0960-252-5960</li>
+                    <li><strong>Local Emergency:</strong> 911</li>
+                    <li><strong>Police Department:</strong> (04597) 15431</li>
+                    <li><strong>Fire Protection:</strong> (04597) 16950</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Student Handbook Modal -->
+    <div id="handbookModal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h2>Student Handbook 2025</h2>
+            <p>The complete WCCAS Student Handbook contains comprehensive information about policies, procedures, and student life. Key sections include:</p>
+            
+            <div class="modal-section">
+                <h3>Handbook Contents</h3>
+                <ul>
+                    <li>Welcome Message from the President</li>
+                    <li>About WCCAS - History, Vision, Mission, Goals</li>
+                    <li>Institutional Policies - Admission, Grading, Attendance</li>
+                    <li>Student Services - Health, Guidance, Library, Financial Aid</li>
+                    <li>Academic Policies - Curriculum, Examination, Graduation</li>
+                    <li>Campus Rules and Regulations</li>
+                    <li>Student Organizations and Activities</li>
+                    <li>Rights and Responsibilities of Students</li>
+                    <li>Disciplinary Procedures</li>
+                    <li>Emergency Procedures</li>
+                    <li>Frequently Asked Questions</li>
+                    <li>Data Privacy and Consent Policy</li>
+                </ul>
+            </div>
+            
+            <div class="modal-section">
+                <h3>How to Access</h3>
+                <p>The complete handbook is available at:</p>
+                <ul>
+                    <li>Registrar's Office</li>
+                    <li>Office of Student Affairs</li>
+                    <li>Guidance Office</li>
+                    <li>WCCAS Website Downloads Section</li>
+                </ul>
+            </div>
+        </div>
+    </div>
+
+    <!-- Custom JavaScript -->
+    <script src="script.js"></script>
+</body>
+</html>
